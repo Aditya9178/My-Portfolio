@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Parida | Portfolio</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .section-separator {
+      height: 2px;
+      width: 100px;
+      background-color: #0d9488;
+      margin: 0 auto 2.5rem;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(13, 148, 136, 0.3), 0 4px 6px -2px rgba(13, 148, 136, 0.1);
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+  <nav class="fixed w-full bg-gray-950 bg-opacity-90 backdrop-blur-sm z-50 shadow-lg">
+    <div class="container mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+      <a href="#home" class="text-3xl font-extrabold text-emerald-400 tracking-wider">Aditya Parida</a>
+      <ul class="hidden md:flex space-x-10 text-lg font-medium">
+        <li><a href="#home" class="hover:text-emerald-400 transition duration-300">Home</a></li>
+        <li><a href="#about" class="hover:text-emerald-400 transition duration-300">About</a></li>
+        <li><a href="#experience" class="hover:text-emerald-400 transition duration-300">Experience</a></li>
+        <li><a href="#projects" class="hover:text-emerald-400 transition duration-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-emerald-400 transition duration-300">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-emerald-400 text-2xl" id="navToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+    <div class="md:hidden hidden bg-gray-950" id="mobileMenu">
+      <ul class="px-6 pb-4 space-y-4 text-center">
+        <li><a href="#home" class="block py-2 hover:text-emerald-400 transition duration-300"
+            onclick="document.getElementById('mobileMenu').classList.add('hidden')">Home</a></li>
+        <li><a href="#about" class="block py-2 hover:text-emerald-400 transition duration-300"
+            onclick="document.getElementById('mobileMenu').classList.add('hidden')">About</a></li>
+        <li><a href="#experience" class="block py-2 hover:text-emerald-400 transition duration-300"
+            onclick="document.getElementById('mobileMenu').classList.add('hidden')">Experience</a></li>
+        <li><a href="#projects" class="block py-2 hover:text-emerald-400 transition duration-300"
+            onclick="document.getElementById('mobileMenu').classList.add('hidden')">Projects</a></li>
+        <li><a href="#contact" class="block py-2 hover:text-emerald-400 transition duration-300"
+            onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="min-h-screen flex items-center pt-24 pb-12 bg-gray-900">
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row items-center justify-center md:space-x-16">
+
+        <div class="flex-shrink-0 mb-8 md:mb-0 order-first md:order-last">
+          <img src="passport.png" alt="Aditya Parida"
+            class="w-60 h-60 rounded-full object-cover border-8 border-emerald-500 shadow-2xl transition duration-500 hover:scale-105" />
+        </div>
+
+        <div class="text-center md:text-left">
+          <p class="text-xl text-emerald-400 mb-2 font-semibold">Hi, I am</p>
+          <h1 class="text-6xl lg:text-7xl font-extrabold text-white mb-4 leading-tight">Aditya Parida</h1>
+          <p class="text-3xl text-gray-400 mb-6 font-light">Frontend Developer & <span class="text-emerald-400">MERN
+              Stack Enthusiast</span></p>
+          <div class="space-x-4">
+            <a href="#projects"
+              class="inline-block px-8 py-3 bg-emerald-500 text-gray-900 font-bold rounded-lg shadow-lg hover:bg-emerald-600 transition duration-300 transform hover:scale-105">View
+              My Work 🚀</a>
+            <a href="#contact"
+              class="inline-block px-8 py-3 border-2 border-gray-600 text-gray-200 font-bold rounded-lg hover:border-emerald-500 hover:text-emerald-400 transition duration-300">Get
+              in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-gray-800 py-20">
+    <div class="container mx-auto px-6 lg:px-12">
+      <h2 class="text-4xl font-bold text-center text-emerald-400 mb-4">About Me</h2>
+      <div class="section-separator"></div>
+
+      <div class="max-w-4xl mx-auto bg-gray-900 p-8 rounded-xl shadow-2xl">
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div>
+            <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+              I am a passionate developer from Odisha, driven by the goal of building seamless and impactful web
+              applications. I enjoy the entire process of bringing an idea to life, from concept to deployment.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              My core strength lies in solving complex problems and mastering new technologies. With practical, hands-on
+              experience in the MERN stack and modern frontend frameworks, my focus is on delivering efficient,
+              scalable, and exceptional user-friendly digital experiences.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-semibold text-white mb-4 border-b border-emerald-700 pb-2">Skills & Tech Stack</h3>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="px-4 py-1 bg-emerald-900 text-emerald-300 rounded-full text-sm font-medium hover:bg-emerald-800 transition">React</span>
+              <span
+                class="px-4 py-1 bg-emerald-900 text-emerald-300 rounded-full text-sm font-medium hover:bg-emerald-800 transition">Node.js</span>
+              <span
+                class="px-4 py-1 bg-emerald-900 text-emerald-300 rounded-full text-sm font-medium hover:bg-emerald-800 transition">MongoDB</span>
+              <span
+                class="px-4 py-1 bg-emerald-900 text-emerald-300 rounded-full text-sm font-medium hover:bg-emerald-800 transition">Express</span>
+              <span
+                class="px-4 py-1 bg-emerald-900 text-emerald-300 rounded-full text-sm font-medium hover:bg-emerald-800 transition">Tailwind
+                CSS</span>
+              <span
+                class="px-4 py-1 bg-emerald-900 text-emerald-300 rounded-full text-sm font-medium hover:bg-emerald-800 transition">JavaScript
+                (ES6+)</span>
+              <span
+                class="px-4 py-1 bg-emerald-900 text-emerald-300 rounded-full text-sm font-medium hover:bg-emerald-800 transition">REST
+                APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="py-20">
+    <div class="container mx-auto px-6 lg:px-12">
+      <h2 class="text-4xl font-bold text-center text-emerald-400 mb-4">Experience</h2>
+      <div class="section-separator"></div>
+
+      <div class="max-w-3xl mx-auto">
+        <div
+          class="bg-gray-800 p-8 rounded-xl shadow-2xl border-l-4 border-emerald-500 transition duration-300 hover:bg-gray-700">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-3xl font-bold text-white">Student Developer</h3>
+            <span class="text-sm font-medium px-3 py-1 bg-emerald-500 text-gray-900 rounded-full">Full-Time</span>
+          </div>
+
+          <ul class="list-disc list-inside space-y-3 text-gray-300 ml-4">
+            <li class="pl-2">Spearheaded the development of responsive frontend interfaces for three major campus
+              web-apps using React and Tailwind CSS.</li>
+            <li class="pl-2">Successfully collaborated with the backend team to seamlessly integrate REST APIs built on
+              the MERN stack, ensuring robust data flow.</li>
+            <li class="pl-2">Implemented performance optimisations, resulting in a 25% improvement in page load speeds
+              and overall user experience metrics.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-gray-800 py-20">
+    <div class="container mx-auto px-6 lg:px-12">
+      <h2 class="text-4xl font-bold text-center text-emerald-400 mb-4">Featured Projects</h2>
+      <div class="section-separator"></div>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div
+          class="project-card bg-gray-900 p-6 rounded-xl shadow-xl transition duration-300 border-t-4 border-emerald-500 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-semibold text-white mb-2">Password Manager</h3>
+            <p class="text-sm font-medium text-emerald-400 mb-4">MERN Stack | Security</p>
+            <p class="text-gray-300 mb-6 flex-grow">A secure password management application built using the complete
+              MERN Stack. Focus was on secure storage, retrieval, and management of user passwords using encryption.</p>
+          </div>
+          <div class="flex justify-start space-x-3 mt-4">
+            <a href="#"
+              class="px-5 py-2 bg-emerald-500 text-gray-900 font-semibold rounded-lg hover:bg-emerald-600 text-sm transition">Code
+              &lt;/&gt;</a>
+            <a href="#"
+              class="px-5 py-2 bg-gray-700 text-gray-200 font-semibold rounded-lg hover:bg-gray-600 text-sm transition">Live
+              Demo</a>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-gray-900 p-6 rounded-xl shadow-xl transition duration-300 border-t-4 border-emerald-500 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-semibold text-white mb-2">Real-time Chat App</h3>
+            <p class="text-sm font-medium text-emerald-400 mb-4">MERN Stack | WebSockets</p>
+            <p class="text-gray-300 mb-6 flex-grow">A real-time chat application featuring user authentication,
+              public/private chat rooms, and a responsive interface. Utilised the MERN stack with WebSocket integration.
+            </p>
+          </div>
+          <div class="flex justify-start space-x-3 mt-4">
+            <a href="#"
+              class="px-5 py-2 bg-emerald-500 text-gray-900 font-semibold rounded-lg hover:bg-emerald-600 text-sm transition">Code
+              &lt;/&gt;</a>
+            <a href="#"
+              class="px-5 py-2 bg-gray-700 text-gray-200 font-semibold rounded-lg hover:bg-gray-600 text-sm transition">Live
+              Demo</a>
+          </div>
+        </div>
+
+        <div
+          class="project-card bg-gray-900 p-6 rounded-xl shadow-xl transition duration-300 border-t-4 border-emerald-500 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-semibold text-white mb-2">Netflix Clone</h3>
+            <p class="text-sm font-medium text-emerald-400 mb-4">HTML | CSS | Frontend Design</p>
+            <p class="text-gray-300 mb-6 flex-grow">A detailed static clone of the Netflix homepage. Showcases
+              proficiency in responsive design modern CSS techniques (Grid/Flexbox), and pixel-perfect UI
+              implementation.</p>
+          </div>
+          <div class="flex justify-start space-x-3 mt-4">
+            <a href="#"
+              class="px-5 py-2 bg-emerald-500 text-gray-900 font-semibold rounded-lg hover:bg-emerald-600 text-sm transition">Code
+              &lt;/&gt;</a>
+            <a href="#"
+              class="px-5 py-2 bg-gray-700 text-gray-200 font-semibold rounded-lg hover:bg-gray-600 text-sm transition">Live
+              Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-6 lg:px-12">
+      <h2 class="text-4xl font-bold text-center text-emerald-400 mb-4">Get In Touch</h2>
+      <div class="section-separator"></div>
+
+      <div class="max-w-lg mx-auto bg-gray-800 p-8 rounded-xl shadow-2xl">
+        <form class="space-y-6">
+          <div>
+            <label class="block text-gray-300 mb-2 font-medium" for="name">Your Name</label>
+            <input type="text" id="name"
+              class="w-full px-5 py-3 rounded-lg bg-gray-900 text-gray-100 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 placeholder-gray-500"
+              placeholder="e.g., Jane Doe" required />
+          </div>
+          <div>
+            <label class="block text-gray-300 mb-2 font-medium" for="email">Your Email</label>
+            <input type="email" id="email"
+              class="w-full px-5 py-3 rounded-lg bg-gray-900 text-gray-100 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 placeholder-gray-500"
+              placeholder="your.email@example.com" required />
+          </div>
+          <div>
+            <label class="block text-gray-300 mb-2 font-medium" for="message">Message</label>
+            <textarea id="message"
+              class="w-full px-5 py-3 rounded-lg bg-gray-900 text-gray-100 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 placeholder-gray-500"
+              rows="5" placeholder="Let's connect on a project!" required></textarea>
+          </div>
+          <button type="submit"
+            class="w-full px-8 py-3 bg-emerald-500 text-gray-900 font-bold rounded-lg shadow-lg hover:bg-emerald-600 transition duration-300 transform hover:scale-[1.01]">
+            Send Message 📧
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-950 py-10">
+    <div class="container mx-auto px-6 lg:px-12 text-center text-gray-500">
+      <p class="mb-2">Built with HTML and Tailwind CSS.</p>
+      <p>© 2025 Aditya Parida. All Rights Reserved.</p>
+      <p class="mt-4">
+        Email: <a href="mailto:your.email@example.com"
+          class="text-emerald-400 hover:text-emerald-300 transition underline">adityaparida917@gmail.com</a>
+      </p>
+      <p>
+        LinkedIn: <a href="https://www.linkedin.com/in/aditya-parida-525091269/" target="_blank"
+          class="text-emerald-400 hover:text-emerald-300 transition underline">Connect on LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>
